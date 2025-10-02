@@ -1,0 +1,668 @@
+html,body{
+    padding: 0;
+    margin:0;
+    font-family: sans-serif;
+    background: #f0f0f0;
+  }
+  
+  body{
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+
+.Hero {
+    background: url(../Picture/3575bd3c-fb64-4741-a1c2-c7ed2aea8c42.jpeg) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-size: cover; /* Gambar akan memenuhi section, meskipun terpotong */
+    background-repeat: no-repeat;
+    background-position: center; /* Posisikan gambar di tengah */
+    height: 50vw;
+    width: 100vw;
+  }
+  
+  .Isi{
+    background-color: #00000060;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Memastikan background warna berada di atas gambar */
+  }
+
+  .Awal{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0;
+    height: 70%;
+    font-size: 1vw;
+  }
+
+  
+  .jurusan-container{
+    width: 100%;
+    height: 40vw;
+    margin: 0 auto;
+    padding: 1px;
+    background-color: #d5d5d5;
+  }
+  
+  .categories_wrap {
+    z-index: 999; 
+    margin-top: 10px; 
+    position: relative;
+   }
+  
+  /* Make ul a grid container */
+  .categories_wrap ul {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+    gap: 20px; /* Add some gap between grid items */
+    padding: 70px 0;
+    list-style: none; /* Remove default list styling */
+  }
+  
+  .categories_wrap .red{
+    color: #f0f0f0;
+  }
+  
+  .categories-course {
+    background: #3ab64c;
+    padding: 15px;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .categories-course img{
+      border-radius:100%;
+    width:100%;
+    height:100%;
+  }
+  
+  .categories-course h4 {
+    font-size: 2vw;
+    color: #fff;
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .categories-course h4:before {
+    content: "";
+    background: #fff;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .categories-course p {
+    font-size: 1.2vw;
+    color: #fff;
+    line-height: 24px;
+    text-align: left;
+    height: 15vw;
+    padding: 0 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .coure-icon-inner {
+    width: 130px;
+    height: 130px;
+    background: #fff;
+    text-align: justify;
+    line-height: 130px;
+    border-radius: 100%;
+    display: inline-block;
+  }
+  
+  .cours-icon {
+    margin-bottom: 30px;
+    margin-top: -80px;
+    display: block;
+  }
+  
+  /* Specific backgrounds for each course category */
+  .categories_wrap ul li:nth-child(1) .categories-course {
+    background: #edde3a;
+    padding: 100 0;
+  }
+  
+  .categories_wrap ul li:nth-child(2) .categories-course {
+    background: #ff002a;
+  }
+  
+  .categories_wrap ul li:nth-child(3) .categories-course {
+    background: #003d69;
+  }
+  
+  .categories_wrap ul li:nth-child(4) .categories-course {
+    background: #3db2d5;
+  }
+  
+  .apaa{
+    width: 10%;
+    height: 10%;
+  }
+  
+
+  
+  .About{
+    background: url(../Picture/bangunan12.jpeg);
+    padding: 2em 0;
+    background-size: 100% 100%;
+    width: 100%;
+  }
+  
+  .Jaft {
+    width: 85%;
+    margin: 0 auto;
+  }
+  
+  .About{
+    height: 85vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .About img{
+    height: 400px;
+    position: absolute;
+    top: 155%;
+    left: 75%;
+  }
+  
+  .About #containere{
+    width: 60%;
+    color: white;
+    font-size: 20px;
+  }
+  
+  .About .Yu{
+    margin: 0 auto;
+    width: 100%;
+    margin: 30px auto;
+  }
+  
+  .About .Tu{
+    width: 100%;
+    margin-top: -5px;
+    opacity: 0.5;
+  }
+  
+  .About .go a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px; /* Tetapkan lebar tetap */
+    height: 10px; /* Sesuaikan tinggi untuk ruang padding */
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 9px;
+    transition: background-color 0.3s;
+    background-color: #FFD700;
+    color: #fff; /* Tambahkan warna teks */
+    position: absolute; /* Tambahkan posisi relatif */
+    overflow: hidden; /* Tambahkan overflow hidden */
+    z-index: 0; /* Pastikan z-index tidak menghalangi before */
+  }
+  
+  .About .go a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+    transition: width 0.5s;
+    background: white;
+  }
+  
+  .About .go a:hover::before {
+    width: 100%;
+  }
+  
+  .Motivasi{
+    background: url(../Picture/bangunan.jpeg) no-repeat;
+    min-height: 100px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    padding: 2em 0;
+    width: 100%;
+  }
+  
+  #pararel{
+    color: white;
+    width: 60%;
+    margin-top: 15%;
+  }
+  
+  .Disini{
+    width: 90%;
+    margin: 0 auto;
+    height: 80vh;
+  }
+  
+  .News{
+    width: 100%;
+    height: 60vh;
+    padding: 2em 0;
+  }
+  
+  .gallery-images {
+    width: 50%;
+    margin: 0 auto;
+    height: 30vh;
+  }
+  
+  .Formasi{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  #Information{
+    justify-content: space-between;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 1em;
+    margin-inline: 5px;
+    text-align: center;
+    width: 85%;
+    height: 251px;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+  }
+  
+  #Information {
+    margin-top: 1px;
+  }
+  
+  #Information:hover{
+    text-decoration: underline;
+  }
+  
+  #Information img{
+    height: 200px;
+  }
+  
+  .gallery h2{
+    display: block;
+  }
+  
+  .gallery-images {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .gallery-images img {
+    width: 30%;
+    height: auto;
+  }
+  
+  footer {
+    background-color: #333;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0em 0;
+  }
+  
+  .footer-content > div {
+    margin-bottom: 1rem;
+    flex: 1 1 200px;
+  }
+  
+  .footer-content h3 {
+    border-bottom: 1px solid white;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    width: 92%;
+  }
+  
+  .footer-content p, .footer-content a, .footer-content ul, .footer-content form {
+    margin: 0.5rem 0;
+  }
+  
+  .footer-content p, .footer-content li{
+    margin-bottom: 0.3px;
+  }
+  
+  .footer-content p{
+    width:91%;
+  }
+  
+  .footer-content a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-content ul {
+    list-style: none;
+    padding: 0em;
+  }
+  
+  .footer-content ul li {
+    margin-bottom: 0.3rem;
+  }
+  
+  .footer-content ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  footer form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  footer form input, footer form button {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    border: none;
+  }
+  
+  footer form button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+  }
+  
+  footer form button:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 1rem;
+    border-top: 1px solid #444;
+    padding-top: 1rem;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  
+  .footer-bottom a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .footer-bottom a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-content .Home-Icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    animation: showright 1s ease forwards;
+    animation-delay: .4s;
+    z-index: 2;
+  }
+  
+  .Home-Icon a {
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    margin: 3px;
+    background: transparent;
+    border: 1px solid #555;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .Home-Icon a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    transition: .5s;
+    background: transparent;
+  }
+  
+  .Home-Icon a:hover::before {
+    background: #FFFFFF80;
+  }
+
+  .Home-Icon .Facebook{
+    background: blue;
+  }
+
+  .Home-Icon .Youtube{
+    background: #c4302b;
+  }
+
+  .Home-Icon .Twitter{
+    background: black;
+  }
+
+  .Home-Icon .Instagram{
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+  }
+
+  .Home-Icon .Tiktok{
+    background: black;
+  }
+  
+  .gallery{
+    height: 45vh;
+    padding: 2em 0;
+  }
+  
+  
+  
+  /* Media Queries untuk Responsiveness */
+  @media screen and (max-width: 1900px){
+    
+  } 
+  @media screen and (max-width: 1800px){
+    
+  }
+  @media screen and (max-width: 1700px){
+    
+  }
+  @media screen and (max-width: 1600px){
+    
+  }
+  @media screen and (max-width: 1500px){
+    
+  }
+  @media screen and (max-width: 1400px){
+    
+  }
+  @media screen and (max-width: 1300px){
+    
+  }
+  @media screen and (max-width: 1200px){
+    
+  }
+  @media screen and (max-width: 1100px){
+    
+  }
+  @media screen and (max-width: 1000px){
+    
+  }
+  @media screen and (max-width: 900px){
+    
+  }
+
+
+
+
+  @media screen and (max-width: 800px) {
+    html, body{
+        padding: 0;
+        margin: 0;
+        transform: translatex(hidden);
+        overflow-x: hidden;
+    }
+
+    .header .container{
+        width: 100%;
+    } 
+    .modal{
+        width: 100%;
+    }
+    .modal-content{
+        height: 500px;
+    }
+    .modal-content img{
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .isi, 
+    .jurusan-container .oi, 
+    .about .jaft, 
+    .bangga .disini, 
+    .news .formasi, 
+    .gallery .gallery-images, 
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .hero h2 {
+        font-size: 36px;
+    }
+  
+    .hero h3 {
+        font-size: 18px;
+    }
+  
+    .jurusan img {
+        width: 100px;
+    }
+  
+    .news .information img {
+        width: 100px;
+    }
+  
+    .gallery .gallery-images img {
+        width: 150px;
+    }
+  
+    .footer-content div {
+        width: 80%;
+    }
+  
+    .about .jaft img, 
+    .about .containere {
+        width: 100%;
+        text-align: center;
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+
+    
+    .Hero h2{
+      font-size: 50%;
+    }
+
+    .Hero h3{
+      font-size: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .Hero{
+      height: 65vh;
+    }
+    
+    .Hero h2{
+      font-size: 50%;
+    }
+
+    .Hero h3{
+      font-size: 50%;
+    }
+}
+  
+  @media screen and (max-width: 500px){
+    .Hero{
+      height: 60vh;
+    }
+    
+    .Hero h2{
+      font-size: 45%;
+    }
+
+    .Hero h3{
+      font-size: 45%;
+    }
+  }
+
+  @media screen and (max-width: 400px){
+    .Hero{
+      height: 50vh;
+    }
+
+    .Hero h2{
+      font-size: 35%;
+    }
+
+    .Hero h3{
+      font-size: 35%;
+    }
+  }
+  @media screen and (max-width: 300px){
+    .Hero{
+      background-size: contain;
+      object-fit: cover;
+      object-position: bottom;
+      height: 15vh;
+      padding: 0 0;
+      margin: auto auto;
+    }
+
+    .Hero h2{
+      font-size: 30%;
+    }
+
+    .Hero h3{
+      font-size: 30%;
+    }
+  }

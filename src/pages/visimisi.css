@@ -1,0 +1,39 @@
+section {
+	width:70%;
+    pading:0 auto;
+    margin:0 auto
+}
+.abdg {
+    max-width: 1200px;
+    margin: auto;
+    text-align:center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content a{
+	border: 3px red solid;
+    height:200px;
+    width:10000px;
+    border-radius: 50%;
+    background:;
+}
+
+#satu{
+	text-align:left;}
+
+#dua{
+	text-align:left;
+}
+
+.content img {
+    max-width: 200px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-right: 20px; /* Jarak antara gambar dan paragraf */
+}
+
+.content p {
+    flex: 1; /* Membuat paragraf mengambil sisa ruang yang ada */
+}
