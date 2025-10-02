@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/SMK-Mardi-Bakti/static/css/main.e65d4790.css",
+    "main.js": "/SMK-Mardi-Bakti/static/js/main.c3cec399.js",
+    "static/js/453.22728844.chunk.js": "/SMK-Mardi-Bakti/static/js/453.22728844.chunk.js",
+    "static/media/Ungu Kuning Ilustrasi Pendaftaran Universitas Mahasiswa Baru Poster.png": "/SMK-Mardi-Bakti/static/media/Ungu Kuning Ilustrasi Pendaftaran Universitas Mahasiswa Baru Poster.6f7dd02ce8b49e022a24.png",
+    "static/media/3575bd3c-fb64-4741-a1c2-c7ed2aea8c42.jpeg": "/SMK-Mardi-Bakti/static/media/3575bd3c-fb64-4741-a1c2-c7ed2aea8c42.1bd271146a8e24bc724f.jpeg",
+    "static/media/sakds.jpeg": "/SMK-Mardi-Bakti/static/media/sakds.119b23bcaedc1fb65448.jpeg",
+    "static/media/smkmardibakti.png": "/SMK-Mardi-Bakti/static/media/smkmardibakti.7021b5960a768842159d.png",
+    "static/media/teacher-icon-linear-isolated-thin-vector-34886781.jpg": "/SMK-Mardi-Bakti/static/media/teacher-icon-linear-isolated-thin-vector-34886781.08851e27b6b60f0bb721.jpg",
+    "static/media/pngtree-book-icon-outline-style-png-image_5084522.jpg": "/SMK-Mardi-Bakti/static/media/pngtree-book-icon-outline-style-png-image_5084522.65d47fab986c86293ddb.jpg",
+    "static/media/kemenpen.png": "/SMK-Mardi-Bakti/static/media/kemenpen.927dfd040c31346ce138.png",
+    "static/media/bangunan12.jpeg": "/SMK-Mardi-Bakti/static/media/bangunan12.3543b0093288d5bbb12a.jpeg",
+    "index.html": "/SMK-Mardi-Bakti/index.html",
+    "main.e65d4790.css.map": "/SMK-Mardi-Bakti/static/css/main.e65d4790.css.map",
+    "main.c3cec399.js.map": "/SMK-Mardi-Bakti/static/js/main.c3cec399.js.map",
+    "453.22728844.chunk.js.map": "/SMK-Mardi-Bakti/static/js/453.22728844.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e65d4790.css",
+    "static/js/main.c3cec399.js"
+  ]
+}
