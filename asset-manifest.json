@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/SMK-Mardi-Bakti/static/css/main.e65d4790.css",
-    "main.js": "/SMK-Mardi-Bakti/static/js/main.c3cec399.js",
+    "main.js": "/SMK-Mardi-Bakti/static/js/main.9b67118e.js",
     "static/js/453.22728844.chunk.js": "/SMK-Mardi-Bakti/static/js/453.22728844.chunk.js",
     "static/media/Ungu Kuning Ilustrasi Pendaftaran Universitas Mahasiswa Baru Poster.png": "/SMK-Mardi-Bakti/static/media/Ungu Kuning Ilustrasi Pendaftaran Universitas Mahasiswa Baru Poster.6f7dd02ce8b49e022a24.png",
     "static/media/3575bd3c-fb64-4741-a1c2-c7ed2aea8c42.jpeg": "/SMK-Mardi-Bakti/static/media/3575bd3c-fb64-4741-a1c2-c7ed2aea8c42.1bd271146a8e24bc724f.jpeg",
@@ -13,11 +13,11 @@
     "static/media/bangunan12.jpeg": "/SMK-Mardi-Bakti/static/media/bangunan12.3543b0093288d5bbb12a.jpeg",
     "index.html": "/SMK-Mardi-Bakti/index.html",
     "main.e65d4790.css.map": "/SMK-Mardi-Bakti/static/css/main.e65d4790.css.map",
-    "main.c3cec399.js.map": "/SMK-Mardi-Bakti/static/js/main.c3cec399.js.map",
+    "main.9b67118e.js.map": "/SMK-Mardi-Bakti/static/js/main.9b67118e.js.map",
     "453.22728844.chunk.js.map": "/SMK-Mardi-Bakti/static/js/453.22728844.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e65d4790.css",
-    "static/js/main.c3cec399.js"
+    "static/js/main.9b67118e.js"
   ]
 }
