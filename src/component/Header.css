@@ -1,0 +1,375 @@
+.container {
+    width: 93%;
+    margin: 0 auto;
+  }
+  
+  .clickable {
+    cursor: pointer;
+  }
+  
+  .no-scroll {
+    overflow: hidden;
+  }
+  
+  .menu{
+    display: none;
+  }
+  
+  .sidebar{
+    position: fixed;
+    display: none;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 3000;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: black;
+  }
+  
+  .sidebar li{
+    width: 100%;
+  }
+  
+  .sidebar .isi-dropdown{
+    width: 100%;
+  }
+  
+  .sidebar .apa .yo{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar .apa .yo:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .sidebar .saleh{
+    color: #848484;
+    cursor: pointer;
+  }
+  
+  .sidebar .saleh:hover{
+    color: #000000;
+    cursor: default;
+  }
+  
+  .sidebar .isi-dropdown{
+    position: relative;
+  }
+  
+  header nav{
+    margin-left: auto;
+  }
+  
+  header{
+    background: #f4f4f4;
+    color: black;
+    padding: 1px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Ensure it is above other content */
+  }
+  header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 70px;
+    margin-right: 1em;
+  }
+  
+  header ul {
+    list-style: none;
+    padding: 15px;
+    align-items: center;
+    display: flex;
+    gap: 0px;
+    width: 100%;
+  }
+  
+  .container ul {
+    list-style-type: none;
+    margin-left: auto;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  header .logo {
+    margin-right: auto;
+  }
+  
+  .container li a {
+    display: block;
+    color:black;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 10px;
+  }
+  
+  .container li a:hover{
+    background-color: #ffb607;
+  }
+  
+  .container .logo li.dropdown {
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .dropdown:hover .isi-dropdown {
+    display: block;
+  }
+  
+  .isi-dropdown a:hover {
+    color: black !important;
+    width: auto;
+    display: flex;
+  }
+  
+  .dropdown:hover > a,
+  .dropdown:focus-within > a {
+    background-color: #ffb607;
+  }
+  
+  .isi-dropdown {
+    position: absolute;
+    display: none;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    background-color: #f0f0f0;
+    width: 20%;
+  }
+  
+  .isi-dropdown a {
+    color: black !important;
+  }
+  
+  .isi-dropdown a:hover {
+    background: #ffb607 !important;
+  }
+  
+  .Tombol{
+    padding: 10px 40px;
+    margin: 0 10px;
+    border-radius: 50px;
+    border: none;
+    background: #f4f4f4;
+    transition: 0.5s;
+  }
+  
+  .Tombol:hover{
+    background: #ffb607;
+    box-shadow: 2px 2px #515151;
+  }
+  
+  .Tombol a{
+    text-decoration: none;
+    color: black;
+    font-size: 3vh;
+  }
+
+/* Responsif */
+  @media screen and (max-width: 1500px ){
+    
+  }
+
+  @media screen and (max-width: 1400px ){
+    
+  }
+
+  @media screen and (max-width: 1300px ){
+    
+  }
+
+  @media screen and (max-width: 1200px ){
+    
+  }
+
+  @media screen and (max-width: 1100px ){
+    
+  }
+
+  @media screen and (max-width: 1000px ){
+    #hideonmobile{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }
+
+  @media screen and (max-width: 900px ){
+    header .logo img {
+        width: 50px;
+        margin-right: 1em;
+    }
+
+    header .logo .clickable {
+        font-size: 24px;
+    }
+
+    .Tombol{
+        padding: 6px 20px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+  }
+
+  @media screen and (max-width: 800px ){
+    header .logo img {
+        width: 50px;
+        margin-right: 1em;
+    }
+
+    header .logo .clickable {
+        font-size: 24px;
+    }
+
+    .Tombol{
+        padding: 6px 20px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 2.5vh;
+    }
+  }
+
+  @media screen and (max-width: 700px ){
+    header .logo img {
+        width: 45px;
+        margin-right: 1em;
+    }
+
+    header .logo .clickable {
+        font-size: 20px;
+    }
+
+    .Tombol{
+        padding: 6px 20px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 7px;
+    }
+  }
+
+  @media screen and (max-width: 600px ){
+    header .logo img {
+        width: 40px;
+        margin-right: 1em;
+    }
+
+    .Tombol{
+        padding: 6px 20px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 7px;
+    }
+  }
+
+  @media screen and (max-width: 500px ){
+    header .logo img {
+        width: 40px;
+        margin-right: 1em;
+    }
+
+    .Tombol{
+        padding: 6px 15px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 7px;
+    }
+  }
+
+  @media screen and (max-width: 400px ){
+    header .logo img {
+        width: 40px;
+        margin-right: 1em;
+    }
+
+    header .logo .clickable {
+        font-size: 12px;
+    }
+
+    .Tombol{
+        padding: 4px 10px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 7px;
+    }
+  }
+
+  @media screen and (max-width: 300px ){
+    .sidebar{
+        white-space: nowrap;
+        overflow-x: scroll; 
+    }
+
+    header .logo img {
+        width: 35px;
+        margin-right: 1em;
+    }
+
+    header .logo .clickable {
+        font-size: 10px;
+    }
+
+    .Tombol{
+        padding: 4px 10px;
+        display: flex;
+    }
+
+    .Tombol:hover{
+        box-shadow: 1px 1px #515151;
+    }
+
+    .Tombol a{
+        font-size: 7px;
+    }
+  }

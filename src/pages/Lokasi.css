@@ -1,0 +1,20 @@
+.locate{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start; 
+    gap: 10%;
+    text-align: justify;
+}
+
+.alamat{
+    max-width: 300px; /* Anda bisa mengatur lebar maksimum paragraf */
+    margin-top: 50px;
+}
+
+iframe{
+    border: 0;
+    flex: 0 0 auto; /* Elemen iframe tidak fleksibel dan mengikuti ukuran aslinya */
+            
+
+}
